@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>BMI CALCULATOR</h1>
+        <form class="calculator">
+            <div>
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" min="0" step="0.01" placeholder="0" class="weight">
+            </div>
+            <div>
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" min="0" step="0.01" placeholder="0" class="height">
+            </div>
+            <div>
+                <button type="reset" class="reset">Reset</button>
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+        <section class="output">
+            <h3>Your BODY MASS INDEX(BMI) is</h3>
+            <p class="bmi">0</p>
+            <p class="desc">N/A</p>
+        </section>
+        <section class="bmi-scale">
+            <span class="one display">
+                <h4>Underweight</h4>
+                <p>&lt;18.5</p>
+            </span>
+            <span class="two">
+                <h4>Healthy</h4>
+                <p>18.5 - 25</p>
+            </span>
+            <span class="three">
+                <h4>Overweight</h4>
+                <p>25 - 30</p>
+            </span>
+            <span class="four">
+                <h4>Obese</h4>
+                <p>>=30</p>
+            </span>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- 
+<div style="--color:var(--underweight)" class="underweight display">
+    <h4>Underweight</h4>
+    <p>&lt;18.5</p>
+</div>
+<div style="--color: var(--healthy)" class="Healthy display">
+    <h4>Healthy</h4>
+    <p>18.5 - 25</p>
+</div>
+<div style="--color: var(--overweight)" class="Overweight display">
+    <h4>Overweight</h4>
+    <p>25 - 30</p>
+</div>
+<div style="--color: var(--obese)" class="Obese display">
+    <h4>Obese</h4>
+    <p>>=30</p>
+</div> -->
